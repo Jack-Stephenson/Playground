@@ -1,0 +1,24 @@
+<h1 style="margin: 30px auto 0; text-align: center; font-size: 50px;">Welcome!</h1>
+<style>
+body {
+    background-color: peachpuff;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    margin: auto 50px;
+}
+.box {
+    max-width: 350px;
+    height: 300px;
+    border: 1px black solid;
+    background-color: blue;
+    background-color: {{ colorr }};
+}
+</style>
+<div class=container>
+    {% for x in range(0, numb): %}
+        <div class=box></div>
+    {% endfor %}
+</div>
